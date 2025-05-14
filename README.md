@@ -1,8 +1,8 @@
 # Parcial I - Laboratorio de Programación
 
-Comenzaste a trabajar en un empresa de seguridad informática y a los pocos día te encomiendan una tarea de determinar que usuarios no cumplirán con la nueva política de contraseñas que actualmente se está elaborando.
+Comenzaste a trabajar en una empresa de seguridad informática y a los pocos días te encomiendan la tarea de determinar que usuarios no cumplirán con la nueva política de contraseñas que actualmente se está elaborando.
 
-Tu misión es desarrollar un servicio web con un endpoint de consulta que lea el archivo de usuarios y determine cuales tienen un password asociado que no cumple con las reglas de la nueva política de seguridad para poder notificarles por correo que deberán ajustar sus contraseña.
+Tu misión es desarrollar un servicio web con un endpoint de consulta que lea el archivo de usuarios y determine cuales tienen un password asociado que **no** cumple con las reglas de la nueva política de seguridad para poder notificarles por correo que deberán ajustar sus contraseña.
 
 ## Política de seguridad
 

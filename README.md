@@ -1,8 +1,8 @@
-# Parcial I - Laboratorio de Programación
+# Practica Parcial I - Laboratorio de Programación
 
-Comenzaste a trabajar en una empresa de seguridad informática y a los pocos días te encomiendan la tarea de determinar que usuarios no cumplirán con la nueva política de contraseñas que actualmente se está elaborando.
+Comenzaste a trabajar en un empresa de seguridad informática y a los pocos día te encomiendan una tarea de determinar que usuarios no cumplirán con la nueva política de contraseñas que actualmente se está elaborando.
 
-Tu misión es desarrollar un servicio web con un endpoint de consulta que lea el archivo de usuarios y determine cuales tienen un password asociado que **no** cumple con las reglas de la nueva política de seguridad para poder notificarles por correo que deberán ajustar sus contraseña.
+Tu misión es desarrollar un servicio web con un endpoint de consulta que lea el archivo de usuarios y determine cuales tienen un password asociado que no cumple con las reglas de la nueva política de seguridad para poder notificarles por correo que deberán ajustar sus contraseña.
 
 ## Política de seguridad
 
@@ -108,21 +108,42 @@ La aplicación debe respetar la siguiente estructura de directorios
 ]
 ```
 
-### Los usuarios que no cumplen las reglas son:
+Los usuarios que no cumplen las reglas son:
 
-1.  juanperez: Fallan reglas longitud < 8 y termina en especial.
-2.  anafernandez: Falla Regla contiene espacio
-3.  pedrorodriguez: Falla Regla termina en especial
-4.  jorgediaz: Falla Regla Longitud > 12
+1.  **juanperez**: reglas incumplidas: [ Longitud mínima de 8 carateres y termina en especial].
 
-#### Los usuarios que sí cumplen todas las reglas son:
+2.  **anafernandez**: reglas incumplidas: [ Longitud mínima de 8 carateres, No puede contener espacios en blanco].
+
+3.  **pedrorodriguez**: reglas incumplidas: [El último caracter no puede ser caractere especial].
+
+4.  **jorgediaz**: regals inclumplidas: [Longitud máxima de 12 caracteres].
+
+Los usuarios que sí cumplen todas las reglas son:
 
 1. carloslopez
 2. elenasanchez
 
-## Punto Bonus
+## Puntos extras para el 10 de nota
 
-Utilizando parte del código que hay implementado crear un nuevo endpoint que retorne los ususarios que si cumple con las reglas. Al idea es reutilziar codigo que hayan realizado. El endpoint será llamado **/usuarios-correctos**
+1. Generar un nuevo endpoind llamado **/validador/con-reglas** que reutilice el máximo posible del codigo realizado en el endpoint anterior **/validador** para que en la salida de este nuevo endpoint se incluya ls reglas que no cuemple cada usuario.
+
+Ejemplo:
+
+```
+[
+    {
+        "userName": "juanperez",
+        "email": "juan.perez@hotmail.com",
+        "reglasInclumplidas": [
+            "Reglas longitud < 8",
+            "El último caracter no puede ser uno de los definidos en la regla 4"
+        ]
+    }
+    .....
+]
+```
+
+2. Utilizando parte del código que hay implementado crear un nuevo endpoint que retorne los ususarios que si cumple con las reglas. Al idea es reutilziar codigo que hayan realizado. El endpoint será llamado **/usuarios-correctos**
 
 Siguiente con el ejemplo. El resultado debería ser:
 

@@ -1,4 +1,6 @@
-En un array de objetos llamado 'seguridad', cada uno de ellos, contenia una password. Lo que se relaizo es crear en el archivo 'reglas.js', todas las reglas/validaciones que debe pasar la contraseña de cada User para que su creacion sea validada.
+En un array de objetos llamado 'seguridad', cada uno de ellos, contenía una password. Lo que realice en el archivo 'reglas.js', fue crear en fn, todas las reglas/validaciones que debe pasar la contraseña de cada User para que su creacion sea validada.
 Al consultar en la url http://localhost:3007/usuarios, lo que imprime por el json, es un array con todos los usuarios con todos sus atributos.
-Al consultar en la url http://localhost:3007/validador, lo que se imprimme por el json, es un array con los usuarios que no cumplen con la contraseña, imprimiento su userName y su email como identificacion.
-Al consultar en la url http://localhost:3007/validador-validados, lo que se imprime por el json, es un array con los usuarios que si contienen una password que cumple con todas las politicas de seguridad.
+Al consultar en la url http://localhost:3007/validador, lo que se imprime por el json, es un array con los usuarios que no cumplen con la contraseña, imprimiendo su 'userName' y su 'email' como identificación.
+Al consultar en la url http://localhost:3007/validador-validados, lo que se imprime por el json, es un array con los usuarios que si contienen una password que cumple con todas las politicas de seguridad. Identificandolos por su 'userName' y por su 'email'.
+
+Mi repositorio de GitHub : https://github.com/rocih44/Primer-Parcial
